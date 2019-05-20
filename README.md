@@ -90,7 +90,7 @@ Les pièces modélisaient sont :
 * Un engrenage
 * Un support moteur
 
-![](https://zupimages.net/up/19/21/3bi1.jpg "boitier moteur")
+![](https://zupimages.net/up/19/21/664f.jpg "boitier moteur")
 
 La crémaillère servira à soulever le siège, elle sera propulsée via l'engrenage qui sera dans son support permettant à l'engrenage et la crémaillère d'être en contact, le servomoteur se rajoute au support pour actionner le tout, ils sont enveloppés par un boîtier pour protéger le tout, le boîtier inclus des trous sur 2 extrémités pour insérer un support (bâton en bois) pour avoir une liberté d'axe.
 
