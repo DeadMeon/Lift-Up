@@ -97,6 +97,8 @@ La crémaillère servira à soulever le siège, elle sera propulsée via l'engre
 
 Quand nous avons reçu la chaise, nous avons commencer les modifications dessus, pour la rendre "compatible" avec notre système, nous avons troué certain partie, retirer quelques parties aussi, mais nous avons surtout poncer beaucoup de partie que se soit de la chaise ou des pièces imprimé en 3d, rien de très compliquer, ça prend juste un peu de temps et de patience, la chaise avancer donc très bien pendant le temps du développement.
 
+![](https://zupimages.net/up/19/21/y5dg.jpg "Chaise")
+
 ### Programmation
 
 Lors de l'avancement une partie programmation était présente. Nous avons dû programmer de l'Arduino (qui est proche du C et du C++), comme nous ne sommes pas experts en Arduino, nous avons commencé à regarder les librairies disponibles pour le fonctionnement d'un servomoteur, et surtout du Bluetooth.
@@ -112,6 +114,8 @@ Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetoot
 
 >Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix intéressant font du Raspberry Pi un produit idéal pour tester différentes choses
 >>Qu'est ce qu'un Raspberry Pi ?
+
+![](https://zupimages.net/up/19/21/0o6v.jpg "raspberry et boitier moteur")
 
 Une première version du code python vu le jour, la chaise se levait et redescendait tout était parfait ! Mais un jour plus rien n'était parfait nous avons donc décidé de passer le projet que sur un unique Raspberry et nous avons fait nos adieux à l'Arduino qui nous à posé beaucoup de soucis, mais le Raspberry nous posa aussi beaucoup de soucis, du moins une libraire python nous causa beaucoup de soucis,
 
@@ -148,6 +152,8 @@ Pour conclure, nous sommes fiers de présenter ce projet, c'est un projet qui no
 Les sociétés trouvent que ce marché est de niche ainsi, ils ne chercheront jamais à cibler cette problématique qui ne leur rapportera pas assez d'argent, donc les recherches sur ce sujet ne sont pas en évolution, et même si une marque décide d'en sortir une, il y a fort à pariez que le produit soit trop cher pour les personnes dans le besoin vu le manque de concurrence. 
 
 Le projet ne peut malheureusement pas être adapté pour les personnes ayant un gros handicap moteur, car la chaise aide juste la personne à se relever, donc il faut que la personne ait un minimum de force dans les jambes.
+
+![](https://zupimages.net/up/19/21/wepc.jpg "chaise relever")
 
 ## Bibliographie
 
