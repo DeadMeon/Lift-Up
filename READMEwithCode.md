@@ -108,7 +108,7 @@ La crémaillère servira à soulever le siège, elle sera propulsée via l'engre
 
 Pour cette chaise, nous avons dû nous procurer des vis de 3 mm de diamètre avec une longueur max de 16 mm pour éviter que sa traverse le siège, des outils nécessaire pour poncer et un manche en bois comme on pourrait trouver pour les balais.
 
-Les modifications effectuées sur le squelette de la chaise étaient de creuser la partie avant de la ceinture pour y insérer des charnières visées sur la partie avant de la ceinture et sur le siège permettant une rotation du siège. Nous avons aussi poncé le haut des piètements avant pour éviter les frottements entre le siège et les piètements lors de l'inclinaison. Nous avons découpé puis fixer un petit support en bois sur le siège pour y insérer la crémaillère pour éviter qu'elle glisse lors de la poussée du siège. Nous avons troué les cotées droite et gauche de la ceinture pour y insérer un support en bois qui maintiendra le boîtier du moteur. 
+Les modifications effectuées sur le squelette de la chaise étaient de creuser la partie avant de la ceinture pour y insérer des charnières visées sur la partie avant de la ceinture et sur le siège permettant une rotation du siège. Nous avons aussi poncé le haut des piètements avant pour éviter les frottements. Nous avons découpé puis fixer un petit support en bois sur le siège pour y insérer la crémaillère pour éviter qu'elle glisse lors de la poussée du siège. Nous avons troué les cotées droite et gauche de la ceinture pour y insérer un support en bois qui maintiendra le boîtier du moteur. 
 
 ![](https://zupimages.net/up/19/21/y5dg.jpg "Chaise")
 
