@@ -117,7 +117,8 @@ Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetoot
 
 #### Code application android sous java
 
-`import android.bluetooth.BluetoothAdapter;
+`
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.BroadcastReceiver;
