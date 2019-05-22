@@ -42,6 +42,8 @@ Le projet était donc lancé, nous avons quand même regardé sur le net si des 
 [Coussin d'aide à la levée](https://www.tousergo.com/aide-au-transfert/28-coussin-d-aide-a-la-levee-3574590140219.html).
 Comme prévu pratiquement aucune société ne fait de chaise de ce style, les sociétés préfèrent viser le marché des fauteuils par rapport aux chaises.
 
+![](https://zupimages.net/up/19/21/7b57.png)
+
 Nous avons réfléchi à plusieurs idées permettant de faire monter le siège d'une chaise :
 
 1. La première idée fut les pistons, simples.
