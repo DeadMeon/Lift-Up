@@ -457,6 +457,32 @@ Une première version du code python vu le jour, la chaise se levait et redescen
 Nous avons donc décidé d'abandonner le Bluetooth via l'Arduino pour nous consacrer sur le Raspberry, nous avons donc commencé de la programmation python, nous sommes déjà un plus apte à être sur ce langage ayant appris les bases lors de notre année, au début le Raspberry servait juste de relais pour envoyer des données à l'Arduino.
 
 #### Code de l'Arduino
+	#include <Servo.h>
+
+	boolean direction = 0;
+
+	Servo servo_4;
+
+	void setup() {
+	  pinMode(2, INPUT);
+	  servo_4.attach(4);
+	}
+
+	void loop() {
+	  if (digitalRead(2) && direction == 0) {
+	    servo_4.write(180);
+	    delay(51000);
+	    servo_4.write(90);
+	    direction = 1;
+	  } else if (digitalRead(2) && direction == 1) {
+	    servo_4.write(0);
+	    delay(51000);
+	    servo_4.write(90);
+	    direction = 0;
+	  }
+	  delay(5*1000);
+
+	}
 
 Cette librairie nous a causée beaucoup de problème, nous ne comprenions pas la logique derrière certaines fonctions, même avec des tutoriaux que se soit textuels ou même via des vidéos, le servomoteur réagissait de manière illogique, une fois, il tournait vers la droite, mais après il tournait à gauche alors qu'on avait rien changé dans le code, nous ne savons toujours pas pourquoi le servomoteur réagissait de cette manière, nous pensons peut-être à un problème de compatibilité avec notre servomoteur, mais nous ne pouvons pas l'affirmer.
 
@@ -468,6 +494,71 @@ Cette librairie nous a causée beaucoup de problème, nous ne comprenions pas la
 gpiozero est donc la librairie que nous avons utilisée, mais nous avons surtout utilisé AngularServo, avec cette nouvelle librairie nous avons réussie à faire un prototype fonctionnel de notre chaise. Le fait de passer le projet que sur un Raspberry a un énorme avantage, on se limite seulement un langage de programmation, l'alimentation est très simple, car juste une batterie externe suffit pour que le tout fonctionne, et surtout sa prend moins de place et donc beaucoup plus simple à cacher.
 
 #### Code Raspberry sous python
+
+	#!/usr/bin/env /usr/bin/python
+	from gpiozero import AngularServo
+	import time
+	import socket
+
+	#pin
+
+	moteur = 18
+	up = False
+
+	#setup bleutooth
+
+	server_socket = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
+	address = "B8:27:EB:8B:31:A9"
+	port = 1
+	server_socket.bind((address,port))
+	server_socket.listen(1)
+	print("On standby...")
+
+	client_socket,address = server_socket.accept()
+	print("Accepted connection from ", address)
+
+	#moteur
+
+	servo = AngularServo(moteur)
+
+	while True:
+
+	    data = client_socket.recv(1024)
+
+	    if data == b'0' and up == True:
+		print("Down")
+		servo.angle = -30
+		time.sleep(3)
+		up = False
+
+	    elif data == b'1' and up == False:
+		print("Up")
+		servo.angle = 15
+		time.sleep(6)
+		up = True
+
+	    elif data == b's':
+		print("Start")
+		servo.min()
+		time.sleep(5)
+
+	    elif data == b'q':
+		print("Quit")
+		servo.max()
+		time.sleep(6)
+		servo.angle = 0
+		break
+
+	    servo.angle = 0 
+
+
+	#onExit
+
+	client_socket.close()
+	server_socket.close()
+
+	from subprocess import call
+	call("shutdown -h now", shell=True)
 
 ## Les difficultés
 
