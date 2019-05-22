@@ -61,6 +61,8 @@ Nous avons donc choisit de passer par la troisième méthode.
 
 Notre première question pour la construction du projet était de savoir si on allait construire la chaise entièrement ou si nous prendrions un kit d'une chaise chez un fabricant. Comme le temps nous manquait un peu, nous avons opté pour choisir une petite [chaise](https://www.ikea.com/fr/fr/p/kritter-chaise-enfant-rouge-80153697/)
  chez le leader IKEA, ceci fait nous a beaucoup facilité la tâche, car il nous rester qu'a ajuster la chaise pour qu'elle soit fonctionnelle avec notre projet.
+ 
+ ![](https://zupimages.net/up/19/21/pmyn.png)
 
 
 Une chaise est complexe à créer, plusieurs critères liés à la conception pour le confort sont très précis : 
