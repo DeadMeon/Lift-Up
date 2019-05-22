@@ -113,7 +113,9 @@ On a donc appris ou du moins essayé de programmer en Arduino, après plusieurs 
 
 L'IDE (_Integrated Development Environment ou Environnement de développement_) Blockly Arduino est bien pour une introduction à l'Arduino pour les personnes qui apprennent l'informatique comme Scratch. Mais pour des personnes qui ont l'habitude de coder, c'est contre-intuitif, car on passe son temps à vouloir ajouter des lignes de code simple, or, c'est impossible. Donc on passe notre temps à faire du copier-coller des blocks dans l'IDE d'Arduino. Mais vous allez nous dire de directement coder sur l'IDE d'Arduino sauf que pour utiliser les servomoteurs, il falait importer des bibliothèques qui sont intégrées à l'IDE Blockly Arduino. Ainsi pour se simplifier la vie Aziz à copier la bibliothèque directement dans l'IDE d'Arduino.
 
-Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetooth sur la carte Arduino, même avec l'aide d'un professeur, la carte ne voulait rien savoir. Nous avons mis en place une application Android qui n'a pas abouti, car au début, on croyait que le fait que l'Arduino ne recevait pas les données venait de notre application, vous pouvez accéder au code [ici](https://github.com/DeadMeon/Lift-Up/blob/master/Test_Applcation_Android/main/java/com/example/devicelist/MainActivity.java).
+Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetooth sur la carte Arduino, même avec l'aide d'un professeur, la carte ne voulait rien savoir. Nous avons mis en place une application Android qui n'a pas abouti, car au début, on croyait que le fait que l'Arduino ne recevait pas les données venait de notre application.
+
+#### Code application android sous java
 
 >Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix intéressant font du Raspberry Pi un produit idéal pour tester différentes choses
 >>Qu'est ce qu'un Raspberry Pi ?
@@ -127,7 +129,9 @@ Une première version du code python vu le jour, la chaise se levait et redescen
 >Un connecteur GPIO offre à une carte électronique la possibilité de communiquer avec d'autres circuits électroniques. Le GPIO est très présent dans les domaine de l'informatique, principalement embarquée, l'électronique, l'automatisme, la commande numérique, ou la robotique.
 >>General Purpose Input/Output
 
-Nous avons donc décidé d'abandonner le Bluetooth via l'Arduino pour nous consacrer sur le Raspberry, nous avons donc commencé de la programmation python, nous sommes déjà un plus apte à être sur ce langage ayant appris les bases lors de notre année, au début le Raspberry servait juste de relais pour envoyer des données à l'Arduino, voici le code de [l'Arduino](https://github.com/DeadMeon/Lift-Up/blob/master/1erCodeArduino.ino).
+Nous avons donc décidé d'abandonner le Bluetooth via l'Arduino pour nous consacrer sur le Raspberry, nous avons donc commencé de la programmation python, nous sommes déjà un plus apte à être sur ce langage ayant appris les bases lors de notre année, au début le Raspberry servait juste de relais pour envoyer des données à l'Arduino.
+
+#### Code de l'Arduino
 
 Cette librairie nous a causée beaucoup de problème, nous ne comprenions pas la logique derrière certaines fonctions, même avec des tutoriaux que se soit textuels ou même via des vidéos, le servomoteur réagissait de manière illogique, une fois, il tournait vers la droite, mais après il tournait à gauche alors qu'on avait rien changé dans le code, nous ne savons toujours pas pourquoi le servomoteur réagissait de cette manière, nous pensons peut-être à un problème de compatibilité avec notre servomoteur, mais nous ne pouvons pas l'affirmer.
 
@@ -136,7 +140,9 @@ Cette librairie nous a causée beaucoup de problème, nous ne comprenions pas la
 >Extends Servo and represents a rotational PWM-controlled servo motor which can be set to particular angles (assuming valid minimum and maximum angles are provided to the constructor). Connect a power source (e.g. a battery pack or the 5V pin) to the power cable of the servo (this is typically colored red); connect the ground cable of the servo (typically colored black or brown) to the negative of your battery pack, or a GND pin; connect the final cable (typically colored white or orange) to the GPIO pin you wish to use for controlling the servo.
 >>14. API - Output Devices
 
-gpiozero est donc la librairie que nous avons utilisée, mais nous avons surtout utilisé AngularServo, avec cette nouvelle librairie nous avons réussie à faire un prototype fonctionnel de notre chaise, vous pouvez voir le code python [ici](https://github.com/DeadMeon/Lift-Up/blob/master/bluetoothGPIO.py). Le fait de passer le projet que sur un Raspberry a un énorme avantage, on se limite seulement un langage de programmation, l'alimentation est très simple, car juste une batterie externe suffit pour que le tout fonctionne, et surtout sa prend moins de place et donc beaucoup plus simple à cacher.
+gpiozero est donc la librairie que nous avons utilisée, mais nous avons surtout utilisé AngularServo, avec cette nouvelle librairie nous avons réussie à faire un prototype fonctionnel de notre chaise. Le fait de passer le projet que sur un Raspberry a un énorme avantage, on se limite seulement un langage de programmation, l'alimentation est très simple, car juste une batterie externe suffit pour que le tout fonctionne, et surtout sa prend moins de place et donc beaucoup plus simple à cacher.
+
+#### Code Raspberry sous python
 
 ## Les difficultés
 
