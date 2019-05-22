@@ -117,7 +117,6 @@ Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetoot
 
 #### Code application android sous java
 
-`
 public class MainActivity extends AppCompatActivity {
     private TextView mBluetoothStatus;
     private TextView mReadBuffer;
@@ -130,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> mBTArrayAdapter;
     private ListView mDevicesListView;
     private CheckBox mLED1;
-
     private Handler mHandler;
     private ConnectedThread mConnectedThread;
     private BluetoothSocket mBTSocket = null;
@@ -409,7 +407,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-}`
+}
 
 >Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix intéressant font du Raspberry Pi un produit idéal pour tester différentes choses
 >>Qu'est ce qu'un Raspberry Pi ?
