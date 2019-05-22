@@ -85,7 +85,15 @@ Nous avons utilisé le site [Tinkercad](https://www.tinkercad.com) pour la modé
 
 >Tinkercad est un outil gratuit et convivial pour la conception 3D, l'électronique et le codage. Il permet aux enseignants, aux enfants, aux amateurs et aux concepteurs d'imaginer, de concevoir et de fabriquer sans limites.
 
-Vous pouvez voir [ici](https://www.tinkercad.com/things/dY0HXlwu65n) les pièces modélisées pour le premier test et [ici](https://www.tinkercad.com/things/2Bs0kqwbqwV) les pièces utilisées pour le montage final. Seules ces dernières on été imprimées.
+
+#### Premiers rendu test des pièces
+
+![](https://zupimages.net/up/19/21/0w47.png "1er rendu des pièces")
+
+#### Rendu Final des pièces
+
+![](https://zupimages.net/up/19/21/3d01.png "rendu final des pièces")
+
 
 Les pièces modélisaient sont :
 * Crémaillère
