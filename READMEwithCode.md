@@ -449,13 +449,6 @@ Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetoot
 
 ![](https://zupimages.net/up/19/21/0o6v.jpg "raspberry et boitier moteur")
 
-Une première version du code python vu le jour, la chaise se levait et redescendait tout était parfait ! Mais un jour plus rien n'était parfait nous avons donc décidé de passer le projet que sur un unique Raspberry et nous avons fait nos adieux à l'Arduino qui nous à posé beaucoup de soucis, mais le Raspberry nous posa aussi beaucoup de soucis, du moins une libraire python nous causa beaucoup de soucis,
-
-`import RPi.GPIO as GPIO`
-
->Un connecteur GPIO offre à une carte électronique la possibilité de communiquer avec d'autres circuits électroniques. Le GPIO est très présent dans les domaine de l'informatique, principalement embarquée, l'électronique, l'automatisme, la commande numérique, ou la robotique.
->>General Purpose Input/Output
-
 Nous avons donc décidé d'abandonner le Bluetooth via l'Arduino pour nous consacrer sur le Raspberry, nous avons donc commencé de la programmation python, nous sommes déjà un plus apte à être sur ce langage ayant appris les bases lors de notre année, au début le Raspberry servait juste de relais pour envoyer des données à l'Arduino.
 
 #### Code de l'Arduino
@@ -485,6 +478,13 @@ Nous avons donc décidé d'abandonner le Bluetooth via l'Arduino pour nous consa
 	  delay(5*1000);
 
 	}
+	
+Une première version du code python à vu le jour, la chaise se levait et redescendait tout était parfait ! Mais un jour plus rien n'était parfait nous avons donc décidé de passer le projet que sur un unique Raspberry et nous avons fait nos adieux à l'Arduino qui nous à posé beaucoup de soucis, mais le Raspberry nous posa aussi beaucoup de soucis, du moins une libraire python nous causa beaucoup de soucis.
+
+`import RPi.GPIO as GPIO`
+
+>Un connecteur GPIO offre à une carte électronique la possibilité de communiquer avec d'autres circuits électroniques. Le GPIO est très présent dans les domaine de l'informatique, principalement embarquée, l'électronique, l'automatisme, la commande numérique, ou la robotique.
+>>General Purpose Input/Output
 
 Cette librairie nous a causée beaucoup de problème, nous ne comprenions pas la logique derrière certaines fonctions, même avec des tutoriaux que se soit textuels ou même via des vidéos, le servomoteur réagissait de manière illogique, une fois, il tournait vers la droite, mais après il tournait à gauche alors qu'on avait rien changé dans le code, nous ne savons toujours pas pourquoi le servomoteur réagissait de cette manière, nous pensons peut-être à un problème de compatibilité avec notre servomoteur, mais nous ne pouvons pas l'affirmer.
 
