@@ -140,9 +140,9 @@ gpiozero est donc la librairie que nous avons utilisée, mais nous avons surtout
 
 ## Les difficultés
 
-Les plus grosses difficultés rencontrées dans ce projet ont été le caprice que nous a fait l'Arduino, la librairie pas compatible avec notre moteur sur Python, et la modélisation des pièces 3d , pas de grosse difficulté nous ont retardée juste des imprévues de temps en temps, mais rien de bien méchant;
+Les plus grosses difficultés rencontrées dans ce projet ont été le caprice que nous a fait l'Arduino, la librairie pas compatible avec notre moteur sur Python, et la modélisation des pièces 3d , pas de grosse difficulté nous ont retardée juste des imprévus de temps en temps, mais rien de bien méchant.
 
-La chaise est fonctionelle, mais elle n'est pas parfaite, des améliorations, peuvent être envisagées, que se soit matériel ou même dans le fonctionnement. Un des premiers ajouts qu'on pourrait faire, c'est un bouton sur la chaise pour donner plus de choix d'utilisation, car les personnes agées n'ont pas tous un téléphone, ou même certaine ne savent pas utiliser le Bluetooth, on pourrait aussi créer une télécommande pour simplifier l'utilisation à distance. 
+La chaise est fonctionnelle, mais elle n'est pas parfaite, des améliorations, peuvent être envisagées, que se soit matériel ou même dans le fonctionnement. Un des premiers ajouts qu'on pourrait faire, c'est un bouton sur la chaise pour donner plus de choix d'utilisation, car les personnes agées n'ont pas tous un téléphone, ou même certaine ne savent pas utiliser le Bluetooth, on pourrait aussi créer une télécommande pour simplifier l'utilisation à distance.
 
 Notre moyen, de faire monter le siège de la chaise n'est pas parfait, il est utile pour les personnes ayant un léger handicap moteur, car la chaise va les aider et ils pourront prendre appuie dès qu'ils le veulent, mais pour les personnes ayant un handicap moteur assez élevé, notre système n'est pas du tout conseillé, car il y a des risques que la personne glisse si ses appuis ne sont pas pris.
 
