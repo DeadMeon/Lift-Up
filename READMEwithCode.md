@@ -117,6 +117,33 @@ Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetoot
 
 #### Code application android sous java
 
+	import android.bluetooth.BluetoothAdapter;
+	import android.bluetooth.BluetoothDevice;
+	import android.bluetooth.BluetoothSocket;
+	import android.content.BroadcastReceiver;
+	import android.content.Context;
+	import android.content.Intent;
+	import android.content.IntentFilter;
+	import android.os.Handler;
+	import android.os.SystemClock;
+	import android.support.v7.app.AppCompatActivity;
+	import android.os.Bundle;
+	import android.view.View;
+	import android.widget.AdapterView;
+	import android.widget.ArrayAdapter;
+	import android.widget.Button;
+	import android.widget.CheckBox;
+	import android.widget.ListView;
+	import android.widget.TextView;
+	import android.widget.Toast;
+
+	import java.io.IOException;
+	import java.io.InputStream;
+	import java.io.OutputStream;
+	import java.io.UnsupportedEncodingException;
+	import java.util.Set;
+	import java.util.UUID;
+
 	public class MainActivity extends AppCompatActivity {
 
 	    private TextView mBluetoothStatus;
@@ -159,9 +186,6 @@ Suite à plusieurs dizaines d'heures à essayer de faire fonctionner le Bluetoot
 		mDevicesListView = (ListView)findViewById(R.id.devicesListView);
 		mDevicesListView.setAdapter(mBTArrayAdapter);
 		mDevicesListView.setOnItemClickListener(mDeviceClickListener);
-
-
-
 
 		mHandler = new Handler(){
 		    public void handleMessage(android.os.Message msg){
