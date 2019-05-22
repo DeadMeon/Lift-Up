@@ -96,8 +96,9 @@ Les pièces modélisaient sont :
 
 La crémaillère servira à soulever le siège, elle sera propulsée via l'engrenage qui sera dans son support permettant à l'engrenage et la crémaillère d'être en contact, le servomoteur se rajoute au support pour actionner le tout, ils sont enveloppés par un boîtier pour protéger le tout, le boîtier inclus des trous sur 2 extrémités pour insérer un support (bâton en bois) pour avoir une liberté d'axe.
 
+Pour cette chaise, nous avons dû nous procurer des vis de 3 mm de diamètre avec une longueur max de 16 mm pour éviter que sa traverse le siège, des outils nécessaire pour poncer et un manche en bois comme on pourrait trouver pour les balais.
 
-Quand nous avons reçu la chaise, nous avons commencer les modifications dessus, pour la rendre "compatible" avec notre système, nous avons troué certain partie, retirer quelques parties aussi, mais nous avons surtout poncer beaucoup de partie que se soit de la chaise ou des pièces imprimé en 3d, rien de très compliquer, ça prend juste un peu de temps et de patience, la chaise avancer donc très bien pendant le temps du développement.
+Les modifications effectuées sur le squelette de la chaise étaient de creuser la partie avant de la ceinture pour y insérer des charnières visées sur la partie avant de la ceinture et sur le siège permettant une rotation du siège. Nous avons aussi poncé le haut des pieds avant pour éviter les frottements entre le siège et les pieds lors de l'inclinaison. Nous avons découpé puis fixer un petit support en bois sur le siège pour y insérer la crémaillère pour éviter qu'elle glisse lors de la poussée du siège. Nous avons troué les cotées droite et gauche de la ceinture pour y insérer un support en bois qui maintiendra le boîtier du moteur. 
 
 ![](https://zupimages.net/up/19/21/y5dg.jpg "Chaise")
 
